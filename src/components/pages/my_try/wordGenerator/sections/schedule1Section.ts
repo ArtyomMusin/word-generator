@@ -1,7 +1,7 @@
 import {Paragraph, Table, TableRow, TextRun, WidthType} from 'docx'
-import GenerateOfGeneral from '../generateOfGeneral'
-import { ICurrentAsicExtract, IData, IOffice, IShareholding } from '../document'
-import { dateFormat, getDifferentYearsFromNow } from '../utils'
+import GenerateOfGeneral from '../total/generateOfGeneral'
+import { ICurrentAsicExtract, IData, IOffice, IShareholding } from '../types/document'
+import { dateFormat, getDifferentYearsFromNow } from '../etc/utils'
 import { config } from '../config'
 
 class GenerateSchedule1Section extends GenerateOfGeneral {

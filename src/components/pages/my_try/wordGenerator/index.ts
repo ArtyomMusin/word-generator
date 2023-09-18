@@ -1,7 +1,7 @@
-import generateDocument from './generateDocument'
+import generateDocument from './total/generateDocument'
 import { Packer } from 'docx'
 import { saveAs } from 'file-saver'
-import { IData } from './document'
+import { IData } from './types/document'
 
 export const generate = async (data: IData) => {
     const documentCreator = new generateDocument(data)

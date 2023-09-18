@@ -1,10 +1,10 @@
 import { Document, LevelFormat, AlignmentType, ISectionOptions } from 'docx'
 import GenerateOfGeneral from './generateOfGeneral'
-import { IData } from './document'
-import { getIntroBySchedule1 } from './sections/schedule1Intro'
-import { getSectionBySchedule1 } from './sections/schedule1Section'
-import { getSectionBySchedule2 } from './sections/schedule2Section'
-import { getSectionBySchedule3 } from './sections/schedule3Section'
+import { IData } from '../types/document'
+import { getIntroBySchedule1 } from '../sections/schedule1Intro'
+import { getSectionBySchedule1 } from '../sections/schedule1Section'
+import { getSectionBySchedule2 } from '../sections/schedule2Section'
+import { getSectionBySchedule3 } from '../sections/schedule3Section'
 
 class generateDocument extends GenerateOfGeneral {
     data: IData

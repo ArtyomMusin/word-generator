@@ -1,8 +1,8 @@
 import {Paragraph, Table, TableRow, TextRun, WidthType} from 'docx'
-import GenerateOfGeneral from '../generateOfGeneral'
-import {IProprietorSearch, IData, ITradeMark} from '../document'
+import GenerateOfGeneral from '../total/generateOfGeneral'
+import {IProprietorSearch, IData, ITradeMark} from '../types/document'
 import { config } from '../config'
-import {dateFormat, getLetterPoint, requestAndConvertImg} from "../utils";
+import {dateFormat, getLetterPoint, requestAndConvertImg} from "../etc/utils";
 
 class GenerateSchedule2Section extends GenerateOfGeneral {
     data: IProprietorSearch[]

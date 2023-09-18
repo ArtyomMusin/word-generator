@@ -1,7 +1,7 @@
 import Layout from '../../total/Layout'
 import { generate } from './wordGenerator'
 import dataJSON from '../../../data/exportData.json'
-import { IData } from './wordGenerator/document'
+import { IData } from './wordGenerator/types/document'
 
 const Try = () => {
     // @ts-ignore

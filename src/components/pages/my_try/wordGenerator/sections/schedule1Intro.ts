@@ -1,7 +1,7 @@
 import { HeadingLevel, Paragraph, TextRun, AlignmentType } from 'docx'
 import { config } from '../config'
-import GenerateOfGeneral from '../generateOfGeneral'
-import { checkSingle } from '../utils'
+import GenerateOfGeneral from '../total/generateOfGeneral'
+import { checkSingle } from '../etc/utils'
 
 class GenerateSchedule1Intro extends GenerateOfGeneral {
     constructor() {

@@ -1,15 +1,13 @@
 import {
     Footer,
     Header, HeadingLevel,
-    PageNumber,
-    PageOrientation,
+    PageNumber, PageOrientation,
     Paragraph, TableCell, TabStopPosition, TabStopType,
     TextRun,
-    WidthType
 } from 'docx'
-import { config } from './config'
-import { IData, IProject } from './document'
-import { checkSingle } from './utils'
+import { config } from '../config'
+import { IData, IProject } from '../types/document'
+import { checkSingle } from '../etc/utils'
 
 class GenerateOfGeneral{
     protected getTableTotalSettings() {
@@ -27,7 +25,7 @@ class GenerateOfGeneral{
         return {
             page: {
                 size: {
-                    orientation: PageOrientation.LANDSCAPE,
+                    orientation: config.documentOrientation,
                 },
             },
         }
@@ -84,12 +82,12 @@ class GenerateOfGeneral{
                 new Paragraph({
                     children: [
                         new TextRun({
-                            text: data.matterNumber,
+                            text: 'data.matterNumber',
                             font: config.font,
                             size: 20
                         }),
                         new TextRun({
-                            children: ["\t\t\t\t\t\t\tPage ", PageNumber.CURRENT, " of ", PageNumber.TOTAL_PAGES],
+                            children: [`${config.documentOrientation === PageOrientation.LANDSCAPE ? '\t\t\t\t\t\t\t' : '\t'}Page `, PageNumber.CURRENT, " of ", PageNumber.TOTAL_PAGES],
                             font: config.font,
                             size: 20
                         })
@@ -97,7 +95,7 @@ class GenerateOfGeneral{
                     tabStops: [
                         {
                             type: TabStopType.RIGHT,
-                            position: TabStopPosition.MAX,
+                            position: TabStopPosition.MAX
                         }
                     ]
                 }),

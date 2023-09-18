@@ -1,6 +1,6 @@
 import { WidthType } from 'docx'
-import GenerateOfGeneral from '../generateOfGeneral'
-import { IData, IPPSR } from '../document'
+import GenerateOfGeneral from '../total/generateOfGeneral'
+import { IData, IPPSR } from '../types/document'
 
 class GenerateSchedule3Section extends GenerateOfGeneral {
     data: IPPSR[]
