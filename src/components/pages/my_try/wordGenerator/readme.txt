@@ -1,6 +1,6 @@
 usage:
 import { generate } from './wordGenerator'
-generate(data)
+generate(data) // data in json format
 
 config:
 You can set your setting in config.ts:

@@ -10,9 +10,9 @@ const Try = () => {
 
     return (
         <Layout>
-            <h3>This is my try</h3>
+            <h3>Click button below for generate</h3>
             <p>
-                <button className="btn btn-primary" onClick={() => generate(data)}>Generate test file with docx!</button>
+                <button className="btn btn-primary" onClick={() => generate(data)}>Generate</button>
             </p>
         </Layout>
     )
